@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+header{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+
+    border-bottom: 1px solid rgb(198, 9, 255);
+
+    font-weight: 500;
+}
+
+.section_intro {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://img.youtube.com/vi/eWtv4vFaEwM/maxresdefault.jpg');
+    background-size: cover;
+
+    background-position: center;
+}
+
+.section_info {
+    width: 50%;
+}
+
+.section_intro_info > h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section_intro_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: start;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+.section_videos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: scroll;
+
+    padding: 20px;
+}
+
+iframe {
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+iframe:hover {
+    border-color: rgb(198, 9, 255);
+}
